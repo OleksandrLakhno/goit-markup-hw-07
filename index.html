@@ -14,47 +14,47 @@
     <link rel=“preconnect” href=“https://fonts.gstatic.com”>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.min.css">
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!--Шапка сторінки-->
-    <header class="header">
+    <header class="page-header">
         <div class="container container-nav">
-            <a href="" class="logo logo-header"><span class="web">Web</span>Studio</a>
+            <a href="" class="logo page-header__logo"><span class="web">Web</span>Studio</a>
             <!---Навігація-->
             <nav>
                 <ul class="site-nav list">
-                    <li class="site-nav-item">
+                    <li class="site-nav__item">
                         <a class="studio-primary " href="">
                             <svg class="line" width="48" height="4">
                                 <use href="./css/img.css/svg-img/line.svg#icon-hover1"></use>
                             </svg>
                             Студія</a>
                     </li>
-                    <li class="site-nav-item">
-                        <a href="./portfolio.html" class="site-nav-link">Портфоліо</a>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
                     </li>
-                    <li class="site-nav-item">
-                        <a href="" class="site-nav-link">Контакти</a>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Контакти</a>
                     </li>
                 </ul>
             </nav>
                 <ul class="contacts list">
-                    <li class="contacts-item">
-                        <a class="contacts-link" href="mailto:info@devstudio.com  ">
-                            <svg class="icon-mail" width="16" height="12">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@devstudio.com  ">
+                            <svg class="contacts__iconmail" width="16" height="12">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-mail"></use>
                             </svg>
                             info@devstudio.com</a>
                     </li>
-                    <li class="contacts-item" >
-                        <a class="contacts-link" href="tel:+380961111111 "> 
-                            <svg class="phone" width="10" height="16">
+                    <li class="contacts__item" >
+                        <a class="contacts__link" href="tel:+380961111111 "> 
+                            <svg class="contacts__iconphone" width="10" height="16">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-phone"></use>
                             </svg>
                             +380961111111</a>
@@ -67,56 +67,56 @@
         <!--Рішення для бізнесу-->
         <section class="section-article">
                 <div class="container">
-                    <h1 class="article">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button data-modal-open type="button" class="article-button" >Заказать услугу</button>
+                    <h1 class="section-article__title">Эффективные решения <br> для вашего бизнеса</h1>
+                    <button data-modal-open type="button" class="section-article__button" >Заказать услугу</button>
                 </div>
         </section>
         <!--Самі рішення-->
-        <section class="section">
+        <section class="section-solutions section">
             <div class="container">
                 <h2  class="visually-hidden">Рішення</h2>
-                <ul class="list solutions">
-                    <li class="solutions-item">
-                        <div class="icons">
+                <ul class="section-solutions__list list">
+                    <li class="section-solutions__item">
+                        <div class="section-solutions__icons">
                             <svg width="70" height="70">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="article-title accent">Внимание к деталям</h3>
-                        <p class="content">
+                        <h3 class="section-solutions__title">Внимание к деталям</h3>
+                        <p class="section-solutions__content">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li class="solutions-item">
-                        <div class="icons">
+                    <li class="section-solutions__item">
+                        <div class="section-solutions__icons">
                             <svg  width="70" height="70">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="article-title accent">Пунктуальность</h3>
-                        <p class="content">
+                        <h3 class="section-solutions__title">Пунктуальность</h3>
+                        <p class="section-solutions__content">
                             Задача организации, в особенности <br> же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li class="solutions-item">
-                        <div class="icons">
+                    <li class="section-solutions__item">
+                        <div class="section-solutions__icons">
                             <svg width="70" height="70">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="article-title accent">Планирование</h3>
-                        <p class="content">
+                        <h3 class="section-solutions__title">Планирование</h3>
+                        <p class="section-solutions__content">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li class="solutions-item">
-                        <div class="icons">
+                    <li class="section-solutions__item">
+                        <div class="section-solutions__icons">
                             <svg width="70" height="70">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="article-title accent">Современные технологии</h3>
-                        <p class="content">
+                        <h3 class="section-solutions__title">Современные технологии</h3>
+                        <p class="section-solutions__content">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
@@ -124,27 +124,27 @@
             </div>
         </section>
         <!--Чим ми займаємось-->
-        <section class="section work-section">
+        <section class="work-section section">
             <div class="container">
-                <h2 class="work-article accent primary">Чем мы занимаемся</h2>
-                <ul class="list work-list">
-                    <li class="item-work">
-                        <div class="position">
+                <h2 class="work-section__title work-section__title--primary">Чем мы занимаемся</h2>
+                <ul class="list work-section__list">
+                    <li class="work-section__item">
+                        <div class="work-section__position">
                              <img src="./img/img.jpg" alt="Людина набирає текст на клавіатурі" width="370" height="294">
-                        <h3 class="position-content position-frame">Десктопные приложения</h3>
+                        <h3 class="work-section__position--content work-section__position--frame">Десктопные приложения</h3>
                         </div>
                     </li>
-                    <li class="item-work">
-                        <div class="position">
+                    <li class="work-section__item">
+                        <div class="work-section__position">
                             <img src="./img/img(1).jpg" alt="Людина тримає телефон і рука лежить на клавіатурі ноутбука"
                                 width="370" height="294">
-                                <h3 class="position-content position-frame">Мобильные приложения</h3>
+                                <h3 class="work-section__position--content work-section__position--frame">Мобильные приложения</h3>
                         </div>
                     </li>
-                    <li class="item-work">
-                        <div class="position">
+                    <li class="work-section__item">
+                        <div class="work-section__position">
                             <img src="./img/img(2).jpg" alt="Людина працює з планшетом" width="370" height="294">
-                            <h3 class="position-content position-frame">Дизайнерские решения</h3>
+                            <h3 class="work-section__position--content work-section__position--frame">Дизайнерские решения</h3>
                         </div>
                     </li>
                 </ul>
@@ -154,13 +154,13 @@
         <!--Наша команда-->
         <section class="section section-team">
             <div class="container">
-                <h2 class="team-article accent primary">Наша команда</h2>
-                <ul class="team list">
-                    <li class="team-item">
+                <h2 class="section-team__title">Наша команда</h2>
+                <ul class="section-team__list list">
+                    <li class="section-team__item">
                         <img src="./img/img(3).jpg" alt="Фото чоловіка в окулярах" width="270" height="260">
-                        <div class="team-box">
-                            <h3 class="teammate">Ігор Демяненко</h3>
-                            <p class="person-work igor-work ">Product Designer</p>
+                        <div class="sectin-team__box">
+                            <h3 class="section-team__name">Ігор Демяненко</h3>
+                            <p class="section-team__work ">Product Designer</p>
                             <div class="team-box-item">
                                 <ul>
                                     <li class="team-box-list">
@@ -195,11 +195,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-item">
+                    <li class="section-team__item">
                         <img src="./img/img(4).jpg" alt="Жінка" width="270" height="260">
-                        <div class="team-box">
-                            <h3 class="teammate">Ольга Репина</h3>
-                            <p class="person-work olga-work">Frontend Developer</p>
+                        <div class="sectin-team__box">
+                            <h3 class="section-team__name">Ольга Репина</h3>
+                            <p class="section-team__work">Frontend Developer</p>
                             <div class="team-box-item">
                                 <ul>
                                     <li  class="team-box-list">
@@ -234,11 +234,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-item">
+                    <li class="section-team__item">
                         <img src="./img/img(5).jpg" alt="Чоловік в блій рубашці" width="270" height="260">
-                        <div class="team-box">
-                            <h3 class="teammate">Миколай Тарасов</h3>
-                            <p class="person-work mikola-work">Marketing</p>
+                        <div class="sectin-team__box">
+                            <h3 class="section-team__name">Миколай Тарасов</h3>
+                            <p class="section-team__work">Marketing</p>
                         <div class="team-box-item">
                            <ul>
                                <li  class="team-box-list">
@@ -274,11 +274,11 @@
                         </div>
                         
                     </li>
-                    <li class="team-item">
+                    <li class="section-team__item">
                         <img src="./img/img(6).jpg" alt="Чоловік в чорній футболці і окулярах" width="270" height="260">
-                        <div class="team-box">
-                            <h3 class="teammate">Михайло Єрмаков</h3>
-                            <p class="person-work mix-work">UI Designer</p>
+                        <div class="sectin-team__box">
+                            <h3 class="section-team__name">Михайло Єрмаков</h3>
+                            <p class="section-team__work">UI Designer</p>
                             <div class="team-box-item">
                                 <ul>
                                     <li  class="team-box-list">
@@ -318,41 +318,41 @@
             </div>
         </section>
         <!-- Постійні клієнти -->
-        <section class="section">
+        <section class="section section-clients">
             <div class="container">
-                <h2 class="clients-list accent primary">Постоянные клиенты</h2>
-                <ul class="list clients-logo">
-                        <li class="clients-item"><a class="clients-interactive" href="#">
+                <h2 class="section-clients__list">Постоянные клиенты</h2>
+                <ul class="list section-clients__logo">
+                        <li class="section-clients__item"><a class="section-clients__interactive" href="#">
                             <svg width="106" height="60">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-yaco"></use>
                             </svg>
                         </a>
                     </li>
-                        <li class="clients-item"><a class="clients-interactive" href="#">
+                        <li class="section-clients__item"><a class="section-clients__interactive" href="#">
                             <svg width="106" height="60">
                                 <use href="./css/img.css/svg-img/symbol-defs.svg#icon-company-tag"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients-item"><a  class="clients-interactive" href="#">
+                    <li class="section-clients__item"><a  class="section-clients__interactive" href="#">
                         <svg width="106" height="60">
                             <use href="./css/img.css/svg-img/symbol-defs.svg#icon-company"></use>
                         </svg>
                     </a>
                 </li>
-                    <li class="clients-item"><a  class="clients-interactive" href="#">
+                    <li class="section-clients__item"><a  class="section-clients__interactive" href="#">
                         <svg width="106" height="60">
                             <use href="./css/img.css/svg-img/symbol-defs.svg#icon-foster-peters"></use>
                         </svg>
                     </a>
                 </li>
-                    <li class="clients-item"><a  class="clients-interactive" href="#">
+                    <li class="section-clients__item"><a  class="section-clients__interactive" href="#">
                         <svg width="106" height="60">
                             <use href="./css/img.css/svg-img/symbol-defs.svg#icon-brand"></use>
                         </svg>
                     </a>
                 </li>
-                    <li class="clients-item"><a  class="clients-interactive" href="#">
+                    <li class="section-clients__item"><a  class="section-clients__interactive" href="#">
                         <svg width="106" height="60">
                             <use href="./css/img.css/svg-img/symbol-defs.svg#icon-company-tag-line"></use>
                         </svg>

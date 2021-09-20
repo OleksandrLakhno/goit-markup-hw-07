@@ -38,11 +38,11 @@ img {
   margin: -1px;
 }
 /* шапка сторінки */
-.header .container-nav {
+.page-header .container-nav {
   display: flex;
   align-items: center;
 }
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 .container {
@@ -53,14 +53,14 @@ img {
 .site-nav {
   display: flex;
 }
-.site-nav-item {
+.site-nav__item {
   display: flex;
   margin-left: 50px;
 }
-.site-nav-item:first-child {
+.site-nav__item:first-child {
   margin-left: 0;
 }
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts {
@@ -77,7 +77,7 @@ img {
   text-decoration: none;
   margin-right: 93px;
 }
-.logo-header {
+.page-header__logo {
   padding: 25px 0px 25px 0px;
 }
 .web {
@@ -96,9 +96,9 @@ img {
   margin-left: auto;
 }
 .studio-primary,
-.site-nav-link,
+.site-nav__link,
 .portfolio-primary,
-.contacts-item {
+.contacts__item {
   text-decoration: none;
 }
 .studio-primary {
@@ -112,7 +112,7 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav-link {
+.site-nav__link {
   color: var(--pimary-text-color);
   padding-top: 24px;
   padding-bottom: 24px;
@@ -130,11 +130,11 @@ img {
   bottom: -10px;
   border-radius: 2px;
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -146,18 +146,18 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-mail {
+.contacts__iconmail {
   margin-right: 10px;
   fill: currentColor;
 }
-.phone {
+.contacts__iconphone {
   display: inline-flex;
   justify-content: center;
   margin-right: 10px;
   fill: currentColor;
 }
 /* рішення для бізнесу */
-.article {
+.section-article__title {
   color: var(--primary-bg-color);
 
   font-weight: 900;
@@ -165,7 +165,10 @@ img {
   line-height: 1.3;
 }
 .section-article {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../css/img.css/Img-min1.jpg);
   background-repeat: no-repeat;
   background-size: 1600px 600px;
@@ -174,13 +177,13 @@ img {
   padding-bottom: 200px;
   text-align: center;
 }
-.article,
-.work-article,
-.team-article,
-.clients-list {
+.section-article__title,
+.work-section__title,
+.section-team__title,
+.section-clients__list {
   text-align: center;
 }
-.article-button {
+.section-article__button {
   cursor: pointer;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
@@ -196,7 +199,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* рішення */
-.icons {
+.section-solutions__icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,22 +208,22 @@ img {
   border-radius: 4px;
   height: 120px;
 }
-.accent {
+.section-solutions__title {
   color: var(--pimary-text-color);
   font-weight: bold;
   letter-spacing: 0.03em;
 }
-.solutions-item:not(:last-child) {
+.section-solutions__item:not(:last-child) {
   margin-right: 30px;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.solutions {
+.section-solutions__list {
   display: flex;
 }
-.content {
+.section-solutions__content {
   color: var(--title-text-color);
   margin-top: 10px;
   height: 70px;
@@ -229,16 +232,16 @@ img {
   letter-spacing: 0.03em;
 }
 /* чим ми займаємось */
-.position {
+.work-section__position {
   position: relative;
 }
-.position-content {
+.work-section__position--content {
   color: var(--primary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.position-frame {
+.work-section__position--frame {
   background-color: rgba(47, 48, 58, 0.8);
   letter-spacing: 0.03em;
   position: absolute;
@@ -248,24 +251,23 @@ img {
   right: 0;
 }
 
-.primary {
+.work-section__title--primary,
+.section-team__title {
   font-size: 36px;
   line-height: 1.16;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
 }
 .work-section {
   padding-top: 0;
 }
-.work-list {
+.work-section__list {
   display: flex;
   margin-top: 50px;
 }
-.item-work:not(:first-child) {
+.work-section__item:not(:first-child) {
   margin-left: auto;
 }
 /* наша команда */
-.team {
+.section-team__list {
   display: flex;
   margin-top: 50px;
   font-size: 16px;
@@ -293,23 +295,20 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-article {
-  margin: 0 auto;
-}
-.team-item:not(:last-child) {
+.section-team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team-item {
+.section-team__item {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.teammate {
+.section-team__name {
   color: var(--pimary-text-color);
   font-weight: 500;
 }
-.team-box {
+.sectin-team__box {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -324,45 +323,32 @@ img {
 .team-box-list:not(:last-child) {
   margin-right: 10px;
 }
-.igor-work {
+.section-team__work {
   margin: 0;
   margin-top: 10px;
-}
-.olga-work {
-  margin: 0;
-  margin-top: 10px;
-}
-.mikola-work {
-  margin: 0;
-  padding-top: 10px;
-}
-.mix-work {
-  margin: 0;
-  padding-top: 10px;
-}
-.person-work {
+
   color: var(--title-text-color);
 }
 /* ------------Постійні клієнти---------- */
-.clients-logo {
+.section-clients__logo {
   display: flex;
 }
-.clients-item:not(:last-child) {
+.section-clients__item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list {
+.section-clients__list {
   margin-bottom: 50px;
 }
-.clients-item {
+.section-clients__item {
   width: 170px;
   height: 92px;
 }
-.clients-interactive:hover,
-.clients-interactive:focus {
+.section-clients__interactive:hover,
+.section-clients__interactive:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.clients-interactive {
+.section-clients__interactive {
   fill: #afb1b8;
   display: flex;
   justify-content: center;
