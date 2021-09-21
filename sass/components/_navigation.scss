@@ -1,0 +1,54 @@
+.site-nav {
+  display: flex;
+}
+.site-nav__item {
+  display: flex;
+  margin-left: 50px;
+}
+.site-nav__item {
+  & :first-child {
+    margin-left: 0;
+  }
+}
+.site-nav,
+.contacts {
+  font-weight: $primary-font-weight;
+  letter-spacing: $primary-letter-spacing;
+  margin-left: auto;
+}
+.studio-primary,
+.site-nav__link,
+.portfolio-primary,
+.contacts__item {
+  text-decoration: none;
+}
+.studio-primary {
+  color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+.site-nav__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.site-nav__link {
+  color: var(--pimary-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  display: block;
+  fill: var(--accent-color);
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 2px;
+}
