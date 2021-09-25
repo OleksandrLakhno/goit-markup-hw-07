@@ -94,7 +94,7 @@ img {
   margin-left: 50px;
 }
 
-.site-nav__item :first-child {
+.site-nav :first-child {
   margin-left: 0;
 }
 
@@ -119,10 +119,6 @@ img {
   position: relative;
 }
 
-.site-nav__link:hover, .site-nav__link:focus {
-  color: var(--accent-color);
-}
-
 .site-nav__link {
   color: var(--pimary-text-color);
   padding-top: 24px;
@@ -133,6 +129,9 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--accent-color);
 }
 
 .line {
@@ -176,6 +175,9 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+}
 
 .contacts__iconmail {
   margin-right: 10px;
@@ -191,10 +193,6 @@ img {
           justify-content: center;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--accent-color);
 }
 
 /* рішення для бізнесу */
@@ -350,11 +348,6 @@ img {
   background-color: #f5f4fa;
 }
 
-.socials:hover, .socials:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-bg-color);
-}
-
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,6 +368,10 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials:hover, .socials:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-bg-color);
 }
 
 .section-team__item:not(:last-child) {
@@ -446,11 +443,6 @@ img {
   height: 92px;
 }
 
-.section-clients__interactive:hover, .section-clients__interactive:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
 .section-clients__interactive {
   fill: #afb1b8;
   display: -webkit-box;
@@ -472,6 +464,10 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-clients__interactive:hover, .section-clients__interactive:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* футер */
@@ -577,18 +573,14 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.socials-footer-link:hover, .socials-footer-link:focus {
-  background-color: #2196f3;
-}
-
-.socials-footer {
   fill: var(--primary-bg-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   width: 44px;
   height: 44px;
+}
+.socials-footer:hover, .socials-footer:focus {
+  background-color: #2196f3;
 }
 
 .socials-item-list {
@@ -915,7 +907,6 @@ textarea {
   border-radius: 50%;
   background-color: var(--primary-bg-color);
 }
-
 .close:hover, .close:focus {
   fill: var(--accent-color);
 }
@@ -928,15 +919,6 @@ textarea {
 }
 
 /* фільтри */
-.filters-item:hover, .filters-item:focus {
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
-  border-radius: 4px;
-}
-
 .filters-item {
   border: transparent;
   border-radius: 4px;
@@ -948,6 +930,14 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filters-item:hover, .filters-item:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border-radius: 4px;
 }
 
 .filters {

@@ -10,13 +10,6 @@
   background-color: #f5f4fa;
 }
 .socials {
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    fill: var(--primary-bg-color);
-  }
-}
-.socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +21,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-bg-color);
+  }
 }
 .section-team__item {
   &:not(:last-child) {

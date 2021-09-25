@@ -5,7 +5,7 @@
   display: flex;
   margin-left: 50px;
 }
-.site-nav__item {
+.site-nav {
   & :first-child {
     margin-left: 0;
   }
@@ -29,12 +29,6 @@
   position: relative;
 }
 .site-nav__link {
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-.site-nav__link {
   color: var(--pimary-text-color);
   padding-top: 24px;
   padding-bottom: 24px;
@@ -42,6 +36,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .line {

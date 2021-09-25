@@ -79,21 +79,33 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.socials-footer-link {
-  &:hover,
-  &:focus {
-    background-color: #2196f3;
-  }
-}
-.socials-footer {
+
   fill: var(--primary-bg-color);
   background-color: rgba(255, 255, 255, 0.1);
 
   border-radius: 20px;
   width: 44px;
   height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }
+// .socials-footer-link {
+//   &:hover,
+//   &:focus {
+//     background-color: #2196f3;
+//   }
+// }
+// .socials-footer {
+//   fill: var(--primary-bg-color);
+//   background-color: rgba(255, 255, 255, 0.1);
+
+//   border-radius: 20px;
+//   width: 44px;
+//   height: 44px;
+// }
 .socials-item-list {
   display: flex;
 }
