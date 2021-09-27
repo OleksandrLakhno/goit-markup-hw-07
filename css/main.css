@@ -119,6 +119,19 @@ img {
   position: relative;
 }
 
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  background-color: var(--accent-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4px;
+  width: 100%;
+  border-radius: 4px;
+}
+
 .site-nav__link {
   color: var(--pimary-text-color);
   padding-top: 24px;
@@ -132,15 +145,6 @@ img {
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
-}
-
-.line {
-  display: block;
-  fill: var(--accent-color);
-  width: 100%;
-  position: absolute;
-  bottom: -10px;
-  border-radius: 2px;
 }
 
 .contacts {
